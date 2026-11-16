@@ -76,7 +76,4 @@ Tất cả API `/orders` và `/order_items` cần `Authorization: Bearer <TOKEN>
 }
 ```
 
-## Lưu ý
-- `product_id` là ID tham chiếu logic tới Product Service; không có foreign key cross-database.
-- `product_name` và `unit_price` được snapshot vào `order_items` tại thời điểm tạo item.
-- Bài yêu cầu kiểm tra tồn kho; service không tự ý sửa database Product Service để trừ kho.
+
