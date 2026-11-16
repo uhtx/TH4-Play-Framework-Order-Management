@@ -1,0 +1,12 @@
+GET     /health                  controllers.OrderController.health
+GET     /orders                  controllers.OrderController.list
+GET     /orders/:id              controllers.OrderController.get(id: Long)
+POST    /orders                  controllers.OrderController.create
+PUT     /orders/:id              controllers.OrderController.update(id: Long)
+DELETE  /orders/:id              controllers.OrderController.delete(id: Long)
+
+GET     /order_items             controllers.OrderItemController.list
+GET     /order_items/:id         controllers.OrderItemController.get(id: Long)
+POST    /order_items             controllers.OrderItemController.create
+PUT     /order_items/:id         controllers.OrderItemController.update(id: Long)
+DELETE  /order_items/:id         controllers.OrderItemController.delete(id: Long)
